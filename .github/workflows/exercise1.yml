@@ -23,9 +23,8 @@ jobs:
   job-three:
     runs-on: ubuntu-latest
     steps:
-      - name: git clone
-        run: git clone https://github.com/JakobBerg/dsp_actions_tutorial_test
-    steps:
+    - name: git clone
+      run: git clone https://github.com/JakobBerg/dsp_actions_tutorial_test
     - name: run pythonfile
       run: python codescript.py
   
