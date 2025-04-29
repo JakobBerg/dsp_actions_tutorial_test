@@ -1,0 +1,22 @@
+# exercise 1 for DTU biosustain and DTU bioengineering Data Club
+
+name: do the exercise1 tasks
+
+on:
+  push:
+
+jobs:
+  job-one:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install cowsay with pip
+      run: pip install cowsay
+    - name: use cowsay with pip
+      run: cowsay -c cheese "hi bioengineering"
+  job-two:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install cowpy with pip
+      run: pip install cowpy
+    - name: use cowpy with pip
+      run: cowpy -c tux "hi biosustain" 
