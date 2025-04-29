@@ -23,6 +23,8 @@ jobs:
   job-three:
     runs-on: ubuntu-latest
     steps:
+    - name: install cowpy with pip
+      run: pip install cowpy
     - name: git clone
       run: git clone https://github.com/JakobBerg/dsp_actions_tutorial_test
     - name: run pythonfile
