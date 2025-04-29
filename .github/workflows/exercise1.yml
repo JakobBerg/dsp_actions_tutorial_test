@@ -12,7 +12,7 @@ jobs:
     - name: install cowsay with pip
       run: pip install cowsay
     - name: use cowsay with pip
-      run: cowsay -c cheese "hi bioengineering"
+      run: cowsay -c cheese -t "hi bioengineering"
   job-two:
     runs-on: ubuntu-latest
     steps:
@@ -20,3 +20,8 @@ jobs:
       run: pip install cowpy
     - name: use cowpy with pip
       run: cowpy -c tux "hi biosustain" 
+  job-three:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run pythonfile
+      run: python codescript.py
